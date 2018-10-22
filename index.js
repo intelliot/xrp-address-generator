@@ -12,8 +12,11 @@ const filterInt = function(value) {
 
 const count = filterInt(process.argv[2]) || 1
 
+const addresses = []
 for (let i = 0; i < count; i++) {
   const address = api.generateAddress()
   Object.assign(address, api.deriveKeypair(address.secret))
-  console.log(address)
+  addresses.push(address)
 }
+
+console.log(JSON.stringify(addresses, null, 2))
