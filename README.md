@@ -1,5 +1,7 @@
 # XRP Address Generator
 
+Generates a specified number of random addresses which could be used with the XRP Ledger. Also outputs the private key and public key for each address, hexadecimal encoded.
+
 ## Usage example:
 
 ```
